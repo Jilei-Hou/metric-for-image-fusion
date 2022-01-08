@@ -1,10 +1,10 @@
 clear;
-file_pathIR ='C:\Users\HJL\Desktop\test\ir\';% 红外图像路径
+file_pathIR ='C:\Users\HJL\Desktop\test\ir\';% path of source image1
 img_path_listIR = dir(strcat(file_pathIR,'*.bmp'));
-file_pathVI ='C:\Users\HJL\Desktop\test\vi\';% 可见光图像路径
+file_pathVI ='C:\Users\HJL\Desktop\test\vi\';% path of source image2
 img_path_listVI = dir(strcat(file_pathVI,'*.bmp'));
-file_path1 ='C:\Users\HJL\Desktop\test\fusion\';% 融合图像路径
-img_path_list1 = dir(strcat(file_path1,'*.bmp')); % .bmp需要根据融合图像的格式相应更改
+file_path1 ='C:\Users\HJL\Desktop\test\fusion\';% path of fusion image
+img_path_list1 = dir(strcat(file_path1,'*.bmp')); % .bmp needs to be changed according to the format of the fusion image
 
 img_num = length(img_path_list1);
 I=cell(1,img_num);

@@ -1,4 +1,4 @@
-file_path1 ='C:\Users\HJL\Desktop\test\fusion\';% ÈÚºÏÍ¼ÏñÂ·¾¶
+file_path1 ='C:\Users\HJL\Desktop\test\fusion\';% ath of fusion image
 img_path_list1 = dir(strcat(file_path1,'*.bmp'));
 img_num = length(img_path_list1);
 I=cell(1,img_num);
