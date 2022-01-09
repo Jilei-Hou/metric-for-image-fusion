@@ -13,8 +13,6 @@
 - MG
 - QG
 
-### TO DO
-
 - MS_SSIM
 
 We have collected some code for image fusion, you can find it [here](https://github.com/Jilei-Hou/code-for-image-fusion).
