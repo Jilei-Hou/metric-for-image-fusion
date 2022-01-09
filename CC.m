@@ -36,10 +36,10 @@ if img_num > 0
         N2=sum(sum((VI-mean(mean(VI))).*(image_ours-mean(mean(image_ours)))));
         D2=sqrt(sum(sum((VI-mean(mean(VI))).^2))*sum(sum((image_ours-mean(mean(image_ours))).^2)));
         r_BF=N2/D2;
-        ssim=0.5*r_AF+0.5*r_BF;
-%         sum_0URS = sum_0URS+ssim;
-        OURS(m) = ssim;
-        clear ssim;    
+        cc=0.5*r_AF+0.5*r_BF;
+%         sum_0URS = sum_0URS+cc;
+        OURS(m) = cc;
+        clear cc;    
     end
 end
 mean_OURS = mean(OURS)

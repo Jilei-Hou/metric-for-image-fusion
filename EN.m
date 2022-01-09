@@ -1,5 +1,4 @@
 file_path ='C:\Users\HJL\Desktop\test\fusion\';% path of fusion image
-
 img_path_list1 = dir(strcat(file_path,'*.bmp'));% .bmp needs to be changed according to the format of the fusion image
 img_num = length(img_path_list1);
 I=cell(1,img_num);
@@ -9,7 +8,7 @@ if img_num > 0
     for m = 1:26 % 26 corresponds to the number of fusion images
         image_name1 = img_path_list1(m).name;
         image_IR = imread(strcat(file_path,image_name1));
-        En = entrCompute(image_IR,1);
+        En = analysis_EN(image_IR,1);
 %         sum_0URS = sum_0URS+En;
         OURS(m) = En;
     end
